@@ -54,7 +54,7 @@ with tab1:
     st.write("Intervalo para cociente de varianzas: ")
     
 
-    st.latex(r"\frac{\sigma^2_1}{\sigma^2_2} \pm\left(\frac{s_1^2}{s_2^2}\right)F_{\alpha/2}(n_1-1, n_2-1) ")
+    st.latex(r"")
 
     st.code("=DISTR.F.INV(1-alpha;df_num;df_den)", language='excelFormula')
 
