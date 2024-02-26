@@ -33,7 +33,7 @@ with tab1:
 
     st.latex(r"\bar{x}_1-\bar{x}_2 \pm t_{\alpha/2} \sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}")
 
-    st.code("=DISTR.T.INV(alpha/2; df)", language='excelFormula')
+    st.code("=DISTR.T.INV(alpha; df)", language='excelFormula')
 
     T = t(30)
     y = T.pdf(x)
@@ -93,7 +93,7 @@ with tab1:
 
     st.pyplot(fig)
     
-    st.code("=DISTR.NORM.ESTAND.INV(1 - alpha/2)", language='excelFormula')
+    st.code("=DISTR.NORM.ESTAND.INV(1 - alpha)", language='excelFormula')
 
 with tab2:
 
